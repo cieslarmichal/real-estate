@@ -1,0 +1,2391 @@
+[{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a49"
+  },
+  "name": "Warszawa",
+  "voivodeship": "Mazowieckie",
+  "district": "Warszawa",
+  "commune": "m.st. Warszawa",
+  "type": "miasto",
+  "latitude": 52.23155825232135,
+  "longitude": 21.005580425262455,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035500"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1726487468310"
+    }
+  },
+  "description": "Wawa opis"
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a4d"
+  },
+  "name": "Kraków",
+  "voivodeship": "Małopolskie",
+  "district": "Kraków",
+  "commune": "m.st. Kraków",
+  "type": "miasto",
+  "latitude": 50.0647,
+  "longitude": 19.945,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035516"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1726227709225"
+    }
+  },
+  "description": "Kraków Kraków  opis"
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a50"
+  },
+  "name": "Łódź",
+  "voivodeship": "Łódzkie",
+  "district": "Łódź",
+  "commune": "m.st. Łódź",
+  "type": "miasto",
+  "latitude": 51.7592,
+  "longitude": 19.456,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035523"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035523"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a53"
+  },
+  "name": "Wrocław",
+  "voivodeship": "Dolnośląskie",
+  "district": "Wrocław",
+  "commune": "m.st. Wrocław",
+  "type": "miasto",
+  "latitude": 51.10933022816857,
+  "longitude": 17.034559249877933,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035529"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725290652237"
+    }
+  },
+  "description": "Wrocław opis"
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a57"
+  },
+  "name": "Poznań",
+  "voivodeship": "Wielkopolskie",
+  "district": "Poznań",
+  "commune": "m.st. Poznań",
+  "type": "miasto",
+  "latitude": 52.4064,
+  "longitude": 16.9252,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035535"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035535"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a5a"
+  },
+  "name": "Gdańsk",
+  "voivodeship": "Pomorskie",
+  "district": "Gdańsk",
+  "commune": "m.st. Gdańsk",
+  "type": "miasto",
+  "latitude": 54.352,
+  "longitude": 18.6466,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035540"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035540"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a5d"
+  },
+  "name": "Szczecin",
+  "voivodeship": "Zachodniopomorskie",
+  "district": "Szczecin",
+  "commune": "m.st. Szczecin",
+  "type": "miasto",
+  "latitude": 53.4285,
+  "longitude": 14.5528,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035544"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287517415"
+    }
+  },
+  "description": "Szczecin opis"
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a60"
+  },
+  "name": "Bydgoszcz",
+  "voivodeship": "Kujawsko-Pomorskie",
+  "district": "Bydgoszcz",
+  "commune": "m.st. Bydgoszcz",
+  "type": "miasto",
+  "latitude": 53.1235,
+  "longitude": 18.0084,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035549"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035549"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a63"
+  },
+  "name": "Lublin",
+  "voivodeship": "Lubelskie",
+  "district": "Lublin",
+  "commune": "m.st. Lublin",
+  "type": "miasto",
+  "latitude": 51.2465,
+  "longitude": 22.5684,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035553"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035553"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a66"
+  },
+  "name": "Białystok",
+  "voivodeship": "Podlaskie",
+  "district": "Białystok",
+  "commune": "m.st. Białystok",
+  "type": "miasto",
+  "latitude": 53.1325,
+  "longitude": 23.1688,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035558"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035558"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a69"
+  },
+  "name": "Katowice",
+  "voivodeship": "Śląskie",
+  "district": "Katowice",
+  "commune": "m.st. Katowice",
+  "type": "miasto",
+  "latitude": 50.2649,
+  "longitude": 19.0238,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035562"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035562"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a6c"
+  },
+  "name": "Gdynia",
+  "voivodeship": "Pomorskie",
+  "district": "Gdynia",
+  "commune": "m.st. Gdynia",
+  "type": "miasto",
+  "latitude": 54.5189,
+  "longitude": 18.5305,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035566"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035566"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a6f"
+  },
+  "name": "Częstochowa",
+  "voivodeship": "Śląskie",
+  "district": "Częstochowa",
+  "commune": "m.st. Częstochowa",
+  "type": "miasto",
+  "latitude": 50.8114,
+  "longitude": 19.1226,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035569"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035569"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a72"
+  },
+  "name": "Radom",
+  "voivodeship": "Mazowieckie",
+  "district": "Radom",
+  "commune": "m.st. Radom",
+  "type": "miasto",
+  "latitude": 51.4027,
+  "longitude": 21.1471,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035573"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035573"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a75"
+  },
+  "name": "Sosnowiec",
+  "voivodeship": "Śląskie",
+  "district": "Sosnowiec",
+  "commune": "m.st. Sosnowiec",
+  "type": "miasto",
+  "latitude": 50.2863,
+  "longitude": 19.1041,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035576"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035576"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a78"
+  },
+  "name": "Toruń",
+  "voivodeship": "Kujawsko-Pomorskie",
+  "district": "Toruń",
+  "commune": "m.st. Toruń",
+  "type": "miasto",
+  "latitude": 53.0138,
+  "longitude": 18.5984,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035580"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035580"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a7b"
+  },
+  "name": "Kielce",
+  "voivodeship": "Świętokrzyskie",
+  "district": "Kielce",
+  "commune": "m.st. Kielce",
+  "type": "miasto",
+  "latitude": 50.8661,
+  "longitude": 20.6286,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035583"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035583"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a7e"
+  },
+  "name": "Gliwice",
+  "voivodeship": "Śląskie",
+  "district": "Gliwice",
+  "commune": "m.st. Gliwice",
+  "type": "miasto",
+  "latitude": 50.2945,
+  "longitude": 18.6714,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035587"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035587"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a81"
+  },
+  "name": "Zabrze",
+  "voivodeship": "Śląskie",
+  "district": "Zabrze",
+  "commune": "m.st. Zabrze",
+  "type": "miasto",
+  "latitude": 50.3249,
+  "longitude": 18.7857,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035590"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035590"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a84"
+  },
+  "name": "Bytom",
+  "voivodeship": "Śląskie",
+  "district": "Bytom",
+  "commune": "m.st. Bytom",
+  "type": "miasto",
+  "latitude": 50.3484,
+  "longitude": 18.9157,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035593"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035593"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a87"
+  },
+  "name": "Olsztyn",
+  "voivodeship": "Warmińsko-Mazurskie",
+  "district": "Olsztyn",
+  "commune": "m.st. Olsztyn",
+  "type": "miasto",
+  "latitude": 53.7784,
+  "longitude": 20.4801,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035596"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035596"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a8a"
+  },
+  "name": "Bielsko-Biała",
+  "voivodeship": "Śląskie",
+  "district": "Bielsko-Biała",
+  "commune": "m.st. Bielsko-Biała",
+  "type": "miasto",
+  "latitude": 49.8224,
+  "longitude": 19.0584,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035599"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035599"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a8d"
+  },
+  "name": "Rzeszów",
+  "voivodeship": "Podkarpackie",
+  "district": "Rzeszów",
+  "commune": "m.st. Rzeszów",
+  "type": "miasto",
+  "latitude": 50.0413,
+  "longitude": 21.999,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035602"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035602"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a90"
+  },
+  "name": "Ruda Śląska",
+  "voivodeship": "Śląskie",
+  "district": "Ruda Śląska",
+  "commune": "m.st. Ruda Śląska",
+  "type": "miasto",
+  "latitude": 50.2558,
+  "longitude": 18.8554,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035606"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035606"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a93"
+  },
+  "name": "Rybnik",
+  "voivodeship": "Śląskie",
+  "district": "Rybnik",
+  "commune": "m.st. Rybnik",
+  "type": "miasto",
+  "latitude": 50.097,
+  "longitude": 18.54,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035608"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035608"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a96"
+  },
+  "name": "Tychy",
+  "voivodeship": "Śląskie",
+  "district": "Tychy",
+  "commune": "m.st. Tychy",
+  "type": "miasto",
+  "latitude": 50.1372,
+  "longitude": 18.9664,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035611"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035611"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a99"
+  },
+  "name": "Dąbrowa Górnicza",
+  "voivodeship": "Śląskie",
+  "district": "Dąbrowa Górnicza",
+  "commune": "m.st. Dąbrowa Górnicza",
+  "type": "miasto",
+  "latitude": 50.3214,
+  "longitude": 19.203,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035615"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035615"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a9c"
+  },
+  "name": "Opole",
+  "voivodeship": "Opolskie",
+  "district": "Opole",
+  "commune": "m.st. Opole",
+  "type": "miasto",
+  "latitude": 50.6751,
+  "longitude": 17.9213,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035618"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035618"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6a9f"
+  },
+  "name": "Elbląg",
+  "voivodeship": "Warmińsko-Mazurskie",
+  "district": "Elbląg",
+  "commune": "m.st. Elbląg",
+  "type": "miasto",
+  "latitude": 54.1522,
+  "longitude": 19.4088,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035621"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035621"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6aa2"
+  },
+  "name": "Płock",
+  "voivodeship": "Mazowieckie",
+  "district": "Płock",
+  "commune": "m.st. Płock",
+  "type": "miasto",
+  "latitude": 52.5463,
+  "longitude": 19.7065,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035623"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035623"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6aa5"
+  },
+  "name": "Wałbrzych",
+  "voivodeship": "Dolnośląskie",
+  "district": "Wałbrzych",
+  "commune": "m.st. Wałbrzych",
+  "type": "miasto",
+  "latitude": 50.7714,
+  "longitude": 16.2843,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035626"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035626"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6aa8"
+  },
+  "name": "Gorzów Wielkopolski",
+  "voivodeship": "Lubuskie",
+  "district": "Gorzów Wielkopolski",
+  "commune": "m.st. Gorzów Wielkopolski",
+  "type": "miasto",
+  "latitude": 52.73,
+  "longitude": 15.24,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035629"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035629"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6aab"
+  },
+  "name": "Włocławek",
+  "voivodeship": "Kujawsko-Pomorskie",
+  "district": "Włocławek",
+  "commune": "m.st. Włocławek",
+  "type": "miasto",
+  "latitude": 52.6483,
+  "longitude": 19.0678,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035633"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035633"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6aae"
+  },
+  "name": "Zielona Góra",
+  "voivodeship": "Lubuskie",
+  "district": "Zielona Góra",
+  "commune": "m.st. Zielona Góra",
+  "type": "miasto",
+  "latitude": 51.9356,
+  "longitude": 15.5062,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035636"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035636"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6ab1"
+  },
+  "name": "Tarnów",
+  "voivodeship": "Małopolskie",
+  "district": "Tarnów",
+  "commune": "m.st. Tarnów",
+  "type": "miasto",
+  "latitude": 50.0125,
+  "longitude": 20.988,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035639"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035639"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6ab4"
+  },
+  "name": "Chorzów",
+  "voivodeship": "Śląskie",
+  "district": "Chorzów",
+  "commune": "m.st. Chorzów",
+  "type": "miasto",
+  "latitude": 50.3058,
+  "longitude": 18.9742,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035642"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035642"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6ab7"
+  },
+  "name": "Kalisz",
+  "voivodeship": "Wielkopolskie",
+  "district": "Kalisz",
+  "commune": "m.st. Kalisz",
+  "type": "miasto",
+  "latitude": 51.7619,
+  "longitude": 18.091,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035645"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035645"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6aba"
+  },
+  "name": "Koszalin",
+  "voivodeship": "Zachodniopomorskie",
+  "district": "Koszalin",
+  "commune": "m.st. Koszalin",
+  "type": "miasto",
+  "latitude": 54.1944,
+  "longitude": 16.1722,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035647"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035647"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6abd"
+  },
+  "name": "Legnica",
+  "voivodeship": "Dolnośląskie",
+  "district": "Legnica",
+  "commune": "m.st. Legnica",
+  "type": "miasto",
+  "latitude": 51.207,
+  "longitude": 16.155,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035650"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035650"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6ac0"
+  },
+  "name": "Grudziądz",
+  "voivodeship": "Kujawsko-Pomorskie",
+  "district": "Grudziądz",
+  "commune": "m.st. Grudziądz",
+  "type": "miasto",
+  "latitude": 53.4848,
+  "longitude": 18.7539,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035654"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035654"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6ac3"
+  },
+  "name": "Jaworzno",
+  "voivodeship": "Śląskie",
+  "district": "Jaworzno",
+  "commune": "m.st. Jaworzno",
+  "type": "miasto",
+  "latitude": 50.2053,
+  "longitude": 19.2732,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035657"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035657"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6ac6"
+  },
+  "name": "Słupsk",
+  "voivodeship": "Pomorskie",
+  "district": "Słupsk",
+  "commune": "m.st. Słupsk",
+  "type": "miasto",
+  "latitude": 54.4641,
+  "longitude": 17.0287,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035660"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035660"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6ac9"
+  },
+  "name": "Jastrzębie-Zdrój",
+  "voivodeship": "Śląskie",
+  "district": "Jastrzębie-Zdrój",
+  "commune": "m.st. Jastrzębie-Zdrój",
+  "type": "miasto",
+  "latitude": 49.9558,
+  "longitude": 18.574,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035663"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035663"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6acc"
+  },
+  "name": "Nowy Sącz",
+  "voivodeship": "Małopolskie",
+  "district": "Nowy Sącz",
+  "commune": "m.st. Nowy Sącz",
+  "type": "miasto",
+  "latitude": 49.6217,
+  "longitude": 20.6975,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035669"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035669"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6acf"
+  },
+  "name": "Jelenia Góra",
+  "voivodeship": "Dolnośląskie",
+  "district": "Jelenia Góra",
+  "commune": "m.st. Jelenia Góra",
+  "type": "miasto",
+  "latitude": 50.9044,
+  "longitude": 15.7182,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035674"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035674"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6ad2"
+  },
+  "name": "Konin",
+  "voivodeship": "Wielkopolskie",
+  "district": "Konin",
+  "commune": "m.st. Konin",
+  "type": "miasto",
+  "latitude": 52.2239,
+  "longitude": 18.2512,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035678"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035678"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6ad5"
+  },
+  "name": "Piotrków Trybunalski",
+  "voivodeship": "Łódzkie",
+  "district": "Piotrków Trybunalski",
+  "commune": "m.st. Piotrków Trybunalski",
+  "type": "miasto",
+  "latitude": 51.4051,
+  "longitude": 19.703,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035686"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035686"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6ad8"
+  },
+  "name": "Inowrocław",
+  "voivodeship": "Kujawsko-Pomorskie",
+  "district": "Inowrocław",
+  "commune": "gmina miejska Inowrocław",
+  "type": "miasto",
+  "latitude": 52.7981,
+  "longitude": 18.2631,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035689"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035689"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6adb"
+  },
+  "name": "Lubin",
+  "voivodeship": "Dolnośląskie",
+  "district": "lubiński",
+  "commune": "gmina miejska Lubin",
+  "type": "miasto",
+  "latitude": 51.3992,
+  "longitude": 16.2022,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035692"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035692"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6ade"
+  },
+  "name": "Siedlce",
+  "voivodeship": "Mazowieckie",
+  "district": "Siedlce",
+  "commune": "m.st. Siedlce",
+  "type": "miasto",
+  "latitude": 52.1677,
+  "longitude": 22.2906,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035695"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035695"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6ae1"
+  },
+  "name": "Mysłowice",
+  "voivodeship": "Śląskie",
+  "district": "Mysłowice",
+  "commune": "m.st. Mysłowice",
+  "type": "miasto",
+  "latitude": 50.2095,
+  "longitude": 19.1667,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035699"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035699"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6ae4"
+  },
+  "name": "Siemianowice Śląskie",
+  "voivodeship": "Śląskie",
+  "district": "Siemianowice Śląskie",
+  "commune": "m.st. Siemianowice Śląskie",
+  "type": "miasto",
+  "latitude": 50.3124,
+  "longitude": 19.0296,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035702"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035702"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6ae7"
+  },
+  "name": "Ostrowiec Świętokrzyski",
+  "voivodeship": "Świętokrzyskie",
+  "district": "ostrowiecki",
+  "commune": "gmina miejska Ostrowiec Świętokrzyski",
+  "type": "miasto",
+  "latitude": 50.9288,
+  "longitude": 21.3876,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035705"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035705"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6aea"
+  },
+  "name": "Bełchatów",
+  "voivodeship": "Łódzkie",
+  "district": "bełchatowski",
+  "commune": "gmina miejska Bełchatów",
+  "type": "miasto",
+  "latitude": 51.3687,
+  "longitude": 19.3561,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035707"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035707"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6aed"
+  },
+  "name": "Piekary Śląskie",
+  "voivodeship": "Śląskie",
+  "district": "Piekary Śląskie",
+  "commune": "m.st. Piekary Śląskie",
+  "type": "miasto",
+  "latitude": 50.3725,
+  "longitude": 18.9273,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035710"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035710"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6af0"
+  },
+  "name": "Świdnica",
+  "voivodeship": "Dolnośląskie",
+  "district": "świdnicki",
+  "commune": "gmina miejska Świdnica",
+  "type": "miasto",
+  "latitude": 50.8426,
+  "longitude": 16.4898,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035714"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035714"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6af3"
+  },
+  "name": "Zgierz",
+  "voivodeship": "Łódzkie",
+  "district": "zgierski",
+  "commune": "gmina miejska Zgierz",
+  "type": "miasto",
+  "latitude": 51.8558,
+  "longitude": 19.406,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035718"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035718"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6af6"
+  },
+  "name": "Biała Podlaska",
+  "voivodeship": "Lubelskie",
+  "district": "Biała Podlaska",
+  "commune": "m.st. Biała Podlaska",
+  "type": "miasto",
+  "latitude": 52.0328,
+  "longitude": 23.1165,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035722"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035722"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6af9"
+  },
+  "name": "Racibórz",
+  "voivodeship": "Śląskie",
+  "district": "raciborski",
+  "commune": "gmina miejska Racibórz",
+  "type": "miasto",
+  "latitude": 50.0917,
+  "longitude": 18.2199,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035725"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035725"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6afc"
+  },
+  "name": "Leszno",
+  "voivodeship": "Wielkopolskie",
+  "district": "Leszno",
+  "commune": "m.st. Leszno",
+  "type": "miasto",
+  "latitude": 51.841,
+  "longitude": 16.5748,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035728"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035728"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6aff"
+  },
+  "name": "Pruszków",
+  "voivodeship": "Mazowieckie",
+  "district": "pruszkowski",
+  "commune": "gmina miejska Pruszków",
+  "type": "miasto",
+  "latitude": 52.1707,
+  "longitude": 20.8063,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035731"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035731"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b02"
+  },
+  "name": "Ostrołęka",
+  "voivodeship": "Mazowieckie",
+  "district": "Ostrołęka",
+  "commune": "m.st. Ostrołęka",
+  "type": "miasto",
+  "latitude": 53.0841,
+  "longitude": 21.5763,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035735"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035735"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b05"
+  },
+  "name": "Stargard",
+  "voivodeship": "Zachodniopomorskie",
+  "district": "stargardzki",
+  "commune": "gmina miejska Stargard",
+  "type": "miasto",
+  "latitude": 53.3369,
+  "longitude": 15.0409,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035738"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035738"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b08"
+  },
+  "name": "Zamość",
+  "voivodeship": "Lubelskie",
+  "district": "Zamość",
+  "commune": "m.st. Zamość",
+  "type": "miasto",
+  "latitude": 50.7231,
+  "longitude": 23.2516,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035740"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035740"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b0b"
+  },
+  "name": "Legionowo",
+  "voivodeship": "Mazowieckie",
+  "district": "legionowski",
+  "commune": "gmina miejska Legionowo",
+  "type": "miasto",
+  "latitude": 52.4022,
+  "longitude": 20.9265,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035743"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035743"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b0e"
+  },
+  "name": "Tarnowskie Góry",
+  "voivodeship": "Śląskie",
+  "district": "tarnogórski",
+  "commune": "gmina miejska Tarnowskie Góry",
+  "type": "miasto",
+  "latitude": 50.451,
+  "longitude": 18.8566,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035745"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035745"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b11"
+  },
+  "name": "Puławy",
+  "voivodeship": "Lubelskie",
+  "district": "puławski",
+  "commune": "gmina miejska Puławy",
+  "type": "miasto",
+  "latitude": 51.4167,
+  "longitude": 21.9671,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035749"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035749"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b14"
+  },
+  "name": "Tomaszów Mazowiecki",
+  "voivodeship": "Łódzkie",
+  "district": "tomaszowski",
+  "commune": "gmina miejska Tomaszów Mazowiecki",
+  "type": "miasto",
+  "latitude": 51.5318,
+  "longitude": 20.0087,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035752"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035752"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b17"
+  },
+  "name": "Żory",
+  "voivodeship": "Śląskie",
+  "district": "Żory",
+  "commune": "m.st. Żory",
+  "type": "miasto",
+  "latitude": 50.0453,
+  "longitude": 18.7005,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035756"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035756"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b1a"
+  },
+  "name": "Kędzierzyn-Koźle",
+  "voivodeship": "Opolskie",
+  "district": "kędzierzyńsko-kozielski",
+  "commune": "gmina miejska Kędzierzyn-Koźle",
+  "type": "miasto",
+  "latitude": 50.3492,
+  "longitude": 18.2193,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035759"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035759"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b1d"
+  },
+  "name": "Stalowa Wola",
+  "voivodeship": "Podkarpackie",
+  "district": "stalowowolski",
+  "commune": "gmina miejska Stalowa Wola",
+  "type": "miasto",
+  "latitude": 50.5723,
+  "longitude": 22.0575,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035762"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035762"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b20"
+  },
+  "name": "Piła",
+  "voivodeship": "Wielkopolskie",
+  "district": "pilski",
+  "commune": "gmina miejska Piła",
+  "type": "miasto",
+  "latitude": 53.1505,
+  "longitude": 16.7388,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035766"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035766"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b23"
+  },
+  "name": "Ełk",
+  "voivodeship": "Warmińsko-Mazurskie",
+  "district": "ełcki",
+  "commune": "gmina miejska Ełk",
+  "type": "miasto",
+  "latitude": 53.828,
+  "longitude": 22.3645,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035770"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035770"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b26"
+  },
+  "name": "Świętochłowice",
+  "voivodeship": "Śląskie",
+  "district": "Świętochłowice",
+  "commune": "m.st. Świętochłowice",
+  "type": "miasto",
+  "latitude": 50.2964,
+  "longitude": 18.916,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035773"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035773"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b29"
+  },
+  "name": "Wodzisław Śląski",
+  "voivodeship": "Śląskie",
+  "district": "wodzisławski",
+  "commune": "gmina miejska Wodzisław Śląski",
+  "type": "miasto",
+  "latitude": 50.0036,
+  "longitude": 18.4732,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035776"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035776"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b2c"
+  },
+  "name": "Tarnobrzeg",
+  "voivodeship": "Podkarpackie",
+  "district": "Tarnobrzeg",
+  "commune": "m.st. Tarnobrzeg",
+  "type": "miasto",
+  "latitude": 50.574,
+  "longitude": 21.6791,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035778"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035778"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b2f"
+  },
+  "name": "Rumia",
+  "voivodeship": "Pomorskie",
+  "district": "wejherowski",
+  "commune": "gmina miejska Rumia",
+  "type": "miasto",
+  "latitude": 54.57,
+  "longitude": 18.3867,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035781"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035781"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b32"
+  },
+  "name": "Skierniewice",
+  "voivodeship": "Łódzkie",
+  "district": "Skierniewice",
+  "commune": "m.st. Skierniewice",
+  "type": "miasto",
+  "latitude": 51.9622,
+  "longitude": 20.147,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035785"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035785"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b35"
+  },
+  "name": "Starachowice",
+  "voivodeship": "Świętokrzyskie",
+  "district": "starachowicki",
+  "commune": "gmina miejska Starachowice",
+  "type": "miasto",
+  "latitude": 51.0401,
+  "longitude": 21.0717,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035787"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035787"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b38"
+  },
+  "name": "Sopot",
+  "voivodeship": "Pomorskie",
+  "district": "Sopot",
+  "commune": "m.st. Sopot",
+  "type": "miasto",
+  "latitude": 54.4418,
+  "longitude": 18.5601,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035790"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035790"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b3b"
+  },
+  "name": "Kołobrzeg",
+  "voivodeship": "Zachodniopomorskie",
+  "district": "kołobrzeski",
+  "commune": "gmina miejska Kołobrzeg",
+  "type": "miasto",
+  "latitude": 54.1802,
+  "longitude": 15.5834,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035793"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035793"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b3e"
+  },
+  "name": "Kraśnik",
+  "voivodeship": "Lubelskie",
+  "district": "kraśnicki",
+  "commune": "gmina miejska Kraśnik",
+  "type": "miasto",
+  "latitude": 50.9236,
+  "longitude": 22.2278,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035796"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035796"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b41"
+  },
+  "name": "Kutno",
+  "voivodeship": "Łódzkie",
+  "district": "kutnowski",
+  "commune": "gmina miejska Kutno",
+  "type": "miasto",
+  "latitude": 52.2317,
+  "longitude": 19.3641,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035800"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035800"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b44"
+  },
+  "name": "Wejherowo",
+  "voivodeship": "Pomorskie",
+  "district": "wejherowski",
+  "commune": "gmina miejska Wejherowo",
+  "type": "miasto",
+  "latitude": 54.604,
+  "longitude": 18.2355,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035803"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035803"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b47"
+  },
+  "name": "Otwock",
+  "voivodeship": "Mazowieckie",
+  "district": "otwocki",
+  "commune": "gmina miejska Otwock",
+  "type": "miasto",
+  "latitude": 52.1064,
+  "longitude": 21.2612,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035806"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035806"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b4a"
+  },
+  "name": "Będzin",
+  "voivodeship": "Śląskie",
+  "district": "będziński",
+  "commune": "gmina miejska Będzin",
+  "type": "miasto",
+  "latitude": 50.3292,
+  "longitude": 19.1287,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035809"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035809"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b4d"
+  },
+  "name": "Zawiercie",
+  "voivodeship": "Śląskie",
+  "district": "zawierciański",
+  "commune": "gmina miejska Zawiercie",
+  "type": "miasto",
+  "latitude": 50.487,
+  "longitude": 19.4166,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035811"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035811"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b50"
+  },
+  "name": "Mikołów",
+  "voivodeship": "Śląskie",
+  "district": "mikołowski",
+  "commune": "gmina miejska Mikołów",
+  "type": "miasto",
+  "latitude": 50.1714,
+  "longitude": 18.9037,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035814"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035814"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b53"
+  },
+  "name": "Sieradz",
+  "voivodeship": "Łódzkie",
+  "district": "sieradzki",
+  "commune": "gmina miejska Sieradz",
+  "type": "miasto",
+  "latitude": 51.5954,
+  "longitude": 18.7381,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035818"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035818"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b56"
+  },
+  "name": "Żyrardów",
+  "voivodeship": "Mazowieckie",
+  "district": "żyrardowski",
+  "commune": "gmina miejska Żyrardów",
+  "type": "miasto",
+  "latitude": 52.0483,
+  "longitude": 20.4452,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035821"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035821"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b59"
+  },
+  "name": "Łomża",
+  "voivodeship": "Podlaskie",
+  "district": "Łomża",
+  "commune": "m.st. Łomża",
+  "type": "miasto",
+  "latitude": 53.1781,
+  "longitude": 22.0593,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035825"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035825"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b5c"
+  },
+  "name": "Nowa Sól",
+  "voivodeship": "Lubuskie",
+  "district": "nowosolski",
+  "commune": "gmina miejska Nowa Sól",
+  "type": "miasto",
+  "latitude": 51.8038,
+  "longitude": 15.717,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035827"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035827"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b5f"
+  },
+  "name": "Sanok",
+  "voivodeship": "Podkarpackie",
+  "district": "sanocki",
+  "commune": "gmina miejska Sanok",
+  "type": "miasto",
+  "latitude": 49.559,
+  "longitude": 22.2058,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035831"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035831"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b62"
+  },
+  "name": "Świnoujście",
+  "voivodeship": "Zachodniopomorskie",
+  "district": "Świnoujście",
+  "commune": "m.st. Świnoujście",
+  "type": "miasto",
+  "latitude": 53.91,
+  "longitude": 14.2492,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035834"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035834"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b65"
+  },
+  "name": "Knurów",
+  "voivodeship": "Śląskie",
+  "district": "gliwicki",
+  "commune": "gmina miejska Knurów",
+  "type": "miasto",
+  "latitude": 50.2187,
+  "longitude": 18.6508,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035837"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035837"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b68"
+  },
+  "name": "Krosno",
+  "voivodeship": "Podkarpackie",
+  "district": "Krosno",
+  "commune": "m.st. Krosno",
+  "type": "miasto",
+  "latitude": 49.6882,
+  "longitude": 21.7701,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035840"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035840"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b6b"
+  },
+  "name": "Kłodzko",
+  "voivodeship": "Dolnośląskie",
+  "district": "kłodzki",
+  "commune": "gmina miejska Kłodzko",
+  "type": "miasto",
+  "latitude": 50.4344,
+  "longitude": 16.6614,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035842"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035842"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b6e"
+  },
+  "name": "Przemyśl",
+  "voivodeship": "Podkarpackie",
+  "district": "Przemyśl",
+  "commune": "m.st. Przemyśl",
+  "type": "miasto",
+  "latitude": 49.7844,
+  "longitude": 22.767,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035845"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035845"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b71"
+  },
+  "name": "Ciechanów",
+  "voivodeship": "Mazowieckie",
+  "district": "ciechanowski",
+  "commune": "gmina miejska Ciechanów",
+  "type": "miasto",
+  "latitude": 52.8782,
+  "longitude": 20.6192,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035848"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035848"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66d5ca7b2457a1ea05eb6b74"
+  },
+  "name": "Pabianice",
+  "voivodeship": "Łódzkie",
+  "district": "pabianicki",
+  "commune": "gmina miejska Pabianice",
+  "type": "miasto",
+  "latitude": 51.6646,
+  "longitude": 19.354,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1725287035851"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1725287035851"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66e4211fc4df9d7859fd7596"
+  },
+  "name": "Grójec",
+  "voivodeship": "Mazowieckie",
+  "district": "powiat1",
+  "commune": "gmina1",
+  "type": "miasto",
+  "description": "opis miasta1",
+  "latitude": 51.85948149217057,
+  "longitude": 20.865330158478482,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1726226719348"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1726312892125"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66e571f09aba57053932ee9a"
+  },
+  "name": "Sochaczew",
+  "voivodeship": "Mazowieckie",
+  "district": "Sochaczew",
+  "commune": "Sochaczew",
+  "type": "miasteczko",
+  "description": "",
+  "latitude": 52.22113087867825,
+  "longitude": 20.237739353744793,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1726312944121"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1726312944121"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66e5736d22db0db3f2b1d5ec"
+  },
+  "name": "Piaseczno",
+  "voivodeship": "Mazowieckie",
+  "district": "",
+  "commune": "",
+  "type": "miasteczko",
+  "description": "",
+  "latitude": 52.062216463825536,
+  "longitude": 21.017075504833105,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1726313325191"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1726313325191"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66e5739722db0db3f2b1d602"
+  },
+  "name": "Konstancin - Jeziorna",
+  "voivodeship": "Mazowieckie",
+  "district": "",
+  "commune": "",
+  "type": "miasteczko",
+  "description": "",
+  "latitude": 52.07898236097895,
+  "longitude": 21.119642418751543,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1726313367373"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1726313367373"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66e573bc22db0db3f2b1d608"
+  },
+  "name": "Góra Kalwaria",
+  "voivodeship": "Mazowieckie",
+  "district": "",
+  "commune": "",
+  "type": "miasteczko",
+  "description": "",
+  "latitude": 51.98097600484133,
+  "longitude": 21.20647341552806,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1726313404213"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1726313404213"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66e573d622db0db3f2b1d60e"
+  },
+  "name": "Tarczyn",
+  "voivodeship": "Mazowieckie",
+  "district": "",
+  "commune": "",
+  "type": "miasto",
+  "description": "",
+  "latitude": 51.9751527527427,
+  "longitude": 20.83316802978516,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1726313430013"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1726313430013"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66e5740122db0db3f2b1d61e"
+  },
+  "name": "Radzymin",
+  "voivodeship": "Mazowieckie",
+  "district": "",
+  "commune": "",
+  "type": "miasto",
+  "description": "",
+  "latitude": 52.395715477302105,
+  "longitude": 21.180267333984375,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1726313473034"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1726313473034"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66e5742f22db0db3f2b1d638"
+  },
+  "name": "Błonie",
+  "voivodeship": "Mazowieckie",
+  "district": "",
+  "commune": "",
+  "type": "miasto",
+  "description": "",
+  "latitude": 52.188246675897176,
+  "longitude": 20.613784790039066,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1726313519331"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1726313519331"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66e5745522db0db3f2b1d642"
+  },
+  "name": "Wołomin",
+  "voivodeship": "Mazowieckie",
+  "district": "",
+  "commune": "",
+  "type": "miasteczko",
+  "description": "",
+  "latitude": 52.34289063530761,
+  "longitude": 21.248245239257812,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1726313557897"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1726313557897"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66e5747222db0db3f2b1d650"
+  },
+  "name": "Łomianki",
+  "voivodeship": "Mazowieckie",
+  "district": "",
+  "commune": "",
+  "type": "miasteczko",
+  "description": "",
+  "latitude": 52.32904511724995,
+  "longitude": 20.894966125488285,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1726313586465"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1726313586465"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66e5748d22db0db3f2b1d656"
+  },
+  "name": "Józefów",
+  "voivodeship": "Mazowieckie",
+  "district": "",
+  "commune": "",
+  "type": "miasteczko",
+  "description": "",
+  "latitude": 52.14149543000338,
+  "longitude": 21.23331069946289,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1726313613880"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1726313613880"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66e574aa22db0db3f2b1d660"
+  },
+  "name": "Ząbki",
+  "voivodeship": "Mazowieckie",
+  "district": "",
+  "commune": "",
+  "type": "miasteczko",
+  "description": "",
+  "latitude": 52.29126257954175,
+  "longitude": 21.11675262451172,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1726313642711"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1726313642711"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "66e574de22db0db3f2b1d66d"
+  },
+  "name": "Ożarów Mazowiecki",
+  "voivodeship": "Mazowieckie",
+  "district": "",
+  "commune": "",
+  "type": "miasteczko",
+  "description": "",
+  "latitude": 52.2059235296225,
+  "longitude": 20.78922271728516,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1726313694223"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1726313694223"
+    }
+  }
+}]

@@ -1,0 +1,21 @@
+services:
+  mongodb:
+    container_name: real-estate-mongodb
+    restart: always
+    image: mongo:latest
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongodb-data:/data/db
+      - mongodb-log:/var/log/mongodb
+      - ./infrastructure/mongo-init.sh:/docker-entrypoint-initdb.d/mongo-init.sh
+      - ./infrastructure/resources:/data/resources
+
+volumes:
+  mongodb-data:
+    driver: local
+  mongodb-log:
+    driver: local
