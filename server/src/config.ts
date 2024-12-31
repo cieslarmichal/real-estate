@@ -33,7 +33,7 @@ export function createConfig(): Config {
     return Value.Decode(configSchema, config);
   } catch (error) {
     if (error instanceof TransformDecodeCheckError) {
-      throw new ConfigurationError({ originalError: error });
+      throw new ConfigurationError({ ...error.error });
     }
 
     throw error;
