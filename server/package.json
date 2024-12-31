@@ -1,0 +1,51 @@
+{
+  "name": "@real-estate/server",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "start:dev": "node --watch --inspect --no-warnings=ExperimentalWarning --experimental-specifier-resolution=node --loader ts-node/esm/transpile-only src/index.ts",
+    "build": "tsc --build tsconfig.prod.json",
+    "build:dev": "tsc --build tsconfig.dev.json",
+    "lint": "eslint . -c ./eslint.config.mjs --max-warnings 0",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "dependencies": {
+    "@fastify/cors": "10.0.1",
+    "@fastify/helmet": "13.0.0",
+    "@fastify/multipart": "9.0.1",
+    "@fastify/type-provider-typebox": "5.1.0",
+    "@sinclair/typebox": "0.34.13",
+    "bcrypt": "5.1.1",
+    "config": "3.3.12",
+    "fastify": "5.2.0",
+    "jsonwebtoken": "9.0.2",
+    "pino": "^9.6.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.17.0",
+    "@faker-js/faker": "9.3.0",
+    "@stylistic/eslint-plugin": "2.12.1",
+    "@types/bcrypt": "5.0.2",
+    "@types/config": "3.3.5",
+    "@types/jsonwebtoken": "9.0.7",
+    "@types/node": "22.10.2",
+    "eslint": "9.17.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-import-resolver-typescript": "3.7.0",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-prettier": "5.2.1",
+    "globals": "15.14.0",
+    "prettier": "3.4.2",
+    "ts-node": "10.9.2",
+    "turbo": "2.3.3",
+    "typescript": "5.7.2",
+    "typescript-eslint": "8.19.0"
+  },
+  "volta": {
+    "node": "22.12.0",
+    "npm": "11.0.0"
+  },
+  "engines": {
+    "node": "22.12.0"
+  }
+}

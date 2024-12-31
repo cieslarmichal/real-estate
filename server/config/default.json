@@ -1,0 +1,14 @@
+{
+  "logLevel": "debug",
+  "server": {
+    "host": "0.0.0.0",
+    "port": 5000
+  },
+  "hashSaltRounds": 10,
+  "token": {
+    "secret": null
+  },
+  "mongo": {
+    "uri": null
+  }
+}

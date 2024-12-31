@@ -1,0 +1,8 @@
+{
+  "mongo": {
+    "uri": "MONGO_URI"
+  },
+  "token": {
+    "secret": "TOKEN_SECRET"
+  }
+}
