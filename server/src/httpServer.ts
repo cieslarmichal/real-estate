@@ -1,12 +1,15 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+import { fastifyCookie } from '@fastify/cookie';
 import { fastifyCors } from '@fastify/cors';
 import { fastifyHelmet } from '@fastify/helmet';
 import { fastifyMultipart } from '@fastify/multipart';
+import { fastifyStatic } from '@fastify/static';
 import { type TypeBoxTypeProvider } from '@fastify/type-provider-typebox';
 import { fastify, type FastifyInstance } from 'fastify';
 import { type FastifySchemaValidationError } from 'fastify/types/schema.js';
+import path from 'node:path';
 
 import { ForbiddenAccessError } from './common/errors/forbiddenAccessError.js';
 import { InputNotValidError } from './common/errors/inputNotValidError.js';
@@ -46,6 +49,13 @@ export class HttpServer {
       origin: '*',
       methods: '*',
       allowedHeaders: '*',
+    });
+
+    await this.fastifyServer.register(fastifyCookie);
+
+    await this.fastifyServer.register(fastifyStatic, {
+      root: path.join(path.resolve(), 'public'),
+      prefix: '/static',
     });
 
     this.fastifyServer.addHook('onRequest', (request, _reply, done) => {
