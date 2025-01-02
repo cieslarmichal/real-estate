@@ -21,6 +21,7 @@ import { UnauthorizedAccessError } from './common/errors/unathorizedAccessError.
 import { type LoggerService } from './common/logger/loggerService.js';
 import { HttpStatusCode } from './common/types/httpStatusCode.js';
 import { type Config } from './config.js';
+import { listingRoute } from './routes/listingRoute.js';
 
 export class HttpServer {
   private readonly fastifyServer: FastifyInstance;
@@ -82,6 +83,8 @@ export class HttpServer {
     });
 
     this.addRequestPreprocessing();
+
+    await this.fastifyServer.register(listingRoute);
 
     await this.fastifyServer.listen({
       port,
