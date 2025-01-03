@@ -76,7 +76,7 @@ const listingModelSchema = new mongoose.Schema(
       enum: ['mieszkanie', 'dom', 'działka', 'lokal użytkowy', 'garaż', 'hale i magazyny'],
     },
     imageUrls: {
-      type: String,
+      type: [String],
     },
     finished: {
       type: Boolean,

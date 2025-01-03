@@ -56,7 +56,7 @@ export class HttpServer {
 
     await this.fastifyServer.register(fastifyStatic, {
       root: path.join(path.resolve(), 'public'),
-      prefix: '/static',
+      prefix: '/public',
     });
 
     this.fastifyServer.addHook('onRequest', (request, _reply, done) => {
@@ -74,6 +74,10 @@ export class HttpServer {
         endpoint: `${request.method} ${request.url}`,
         statusCode: reply.statusCode,
       });
+
+      if (request.url.includes('/public')) {
+        reply.header('cross-origin-resource-policy', 'cross-origin');
+      }
 
       done();
     });

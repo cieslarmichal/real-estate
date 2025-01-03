@@ -1,0 +1,9 @@
+.contentBox {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.contentBoxTitle {
+  margin-bottom: 1rem;
+}
