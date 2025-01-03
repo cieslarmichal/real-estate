@@ -8,7 +8,10 @@ function CityCard({ cityName }) {
   const cityImage = `${backendUrl}/public/img/cities/${cityNameLowerCase}.jpg`;
 
   return (
-    <NavLink to={`/listings/location/${cityNameLowerCase}`}>
+    <NavLink
+      to={`/listings/location/${cityNameLowerCase}`}
+      className={styles.cityCard}
+    >
       <div className={styles.imageContainer}>
         <img
           src={cityImage}
