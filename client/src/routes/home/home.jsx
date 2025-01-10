@@ -3,6 +3,7 @@ import CenteredContent from '../../components/centeredContent/centeredContent';
 import LatestListings from '../../components/latestListings/latestListings';
 import ContentBox from '../../components/contentBox/contentBox';
 import PopularCities from '../../components/popularCities/popularCities';
+import Faq from '../../components/faq/faq';
 
 function Home() {
   return (
@@ -20,6 +21,10 @@ function Home() {
 
         <ContentBox title="Popularne miasta">
           <PopularCities />
+        </ContentBox>
+
+        <ContentBox>
+          <Faq />
         </ContentBox>
       </CenteredContent>
     </div>
