@@ -6,6 +6,7 @@ import PhotoViewer from '../../components/photoViewer/photoViewer';
 import { formatPricePln } from '../../utils/formatPrice';
 import { formatDate } from '../../utils/formatDate';
 import DataTable from '../../components/dataTable/dataTable';
+import MapPicker from '../../components/mapPicker/mapPicker';
 
 function ListingPage() {
   const listing = useLoaderData();
@@ -44,6 +45,13 @@ function ListingPage() {
             <DataTable
               data={detailsData}
               labelValueMode
+            />
+          </ContentBox>
+
+          <ContentBox title={'Mapa:'}>
+            <MapPicker
+              latitude={listing.latitude}
+              longitude={listing.longitude}
             />
           </ContentBox>
         </div>
