@@ -1,0 +1,39 @@
+.photosViewer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mainImage {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 10px;
+}
+
+.selectedImage {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 10px;
+}
+
+.thumbnailImage {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.thumbnailImage.active {
+  border-color: #007bff;
+}
+
+.thumbnailImage:hover {
+  border-color: #007bff;
+}

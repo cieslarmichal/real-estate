@@ -34,7 +34,7 @@ function ListingCard({ listing }) {
           </div>
           <div className={styles.rightColumnn}></div>
           <p className={styles.price}>
-            <string>{formatPricePln(price)}</string>
+            <strong>{formatPricePln(price)}</strong>
           </p>
           <p className={styles.price}>
             {formatPricePln(price / size)} / m<sup>2</sup>

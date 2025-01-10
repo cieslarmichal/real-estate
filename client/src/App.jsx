@@ -17,7 +17,7 @@ function App() {
         },
         {
           path: '/listings/:id',
-          element: ListingPage,
+          element: <ListingPage />,
           loader: listingPageLoader,
         },
       ],
