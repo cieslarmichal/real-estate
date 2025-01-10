@@ -13,7 +13,7 @@ const queryParamsSchema = Type.Object({
 
 type QueryParams = Static<typeof queryParamsSchema>;
 
-export function listingRoute(fastify: FastifyInstance): void {
+export function getListingsRoute(fastify: FastifyInstance): void {
   fastify.get(
     '/api/v1/listings',
     {
@@ -42,7 +42,7 @@ export function listingRoute(fastify: FastifyInstance): void {
         listingModel.countDocuments(listingsQuery),
       ]);
 
-      reply.send({
+      return reply.send({
         data: listings,
         metadata: {
           page,

@@ -1,6 +1,10 @@
 import mongoose from 'mongoose';
 
-const listingModelSchema = new mongoose.Schema(
+import { userModel } from './userModel.js';
+
+console.log('userModel', userModel);
+
+const listingSchema = new mongoose.Schema(
   {
     title: {
       type: String,
@@ -100,4 +104,4 @@ const listingModelSchema = new mongoose.Schema(
   },
 );
 
-export const listingModel = mongoose.model('Listing', listingModelSchema);
+export const listingModel = mongoose.model('Listing', listingSchema);
