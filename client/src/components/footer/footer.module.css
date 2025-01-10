@@ -1,0 +1,37 @@
+.footerContent {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  background-color: #fff;
+}
+
+.footerColumn {
+  flex: 1 1 30%;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footerTitle {
+  margin-bottom: 10px;
+}
+
+.footerLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinks li {
+  margin-bottom: 5px;
+}
+
+.footerLinks a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footerLinks a:hover {
+  text-decoration: underline;
+}
