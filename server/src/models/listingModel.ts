@@ -1,9 +1,5 @@
 import mongoose from 'mongoose';
 
-import { userModel } from './userModel.js';
-
-console.log('userModel', userModel);
-
 const listingSchema = new mongoose.Schema(
   {
     title: {

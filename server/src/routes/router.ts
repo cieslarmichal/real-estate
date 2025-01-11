@@ -2,6 +2,7 @@ import { type FastifyRequest, type FastifyInstance } from 'fastify';
 
 import { getListingRoute } from './getListingRoute.js';
 import { getListingsRoute } from './getListingsRoute.js';
+import { getUserRoute } from './getUserRoute.js';
 
 export function registerRoutes(fastify: FastifyInstance): void {
   // eslint-disable-next-line @typescript-eslint/naming-convention
@@ -12,4 +13,6 @@ export function registerRoutes(fastify: FastifyInstance): void {
   fastify.register(getListingsRoute);
 
   fastify.register(getListingRoute);
+
+  fastify.register(getUserRoute);
 }
