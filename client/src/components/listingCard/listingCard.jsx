@@ -4,7 +4,6 @@ import { backendUrl } from '../../constants/api';
 import { formatPricePln } from '../../utils/formatPrice';
 
 function ListingCard({ listing }) {
-  console.log({ listing });
   const { title, imageUrls, locality, size, rooms, price } = listing;
 
   return (
