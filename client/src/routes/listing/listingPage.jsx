@@ -7,6 +7,7 @@ import { formatPricePln } from '../../utils/formatPrice';
 import { formatDate } from '../../utils/formatDate';
 import DataTable from '../../components/dataTable/dataTable';
 import MapPicker from '../../components/mapPicker/mapPicker';
+import UserInfo from '../../components/userInfo/userInfo';
 
 function ListingPage() {
   const listing = useLoaderData();
@@ -53,6 +54,10 @@ function ListingPage() {
               latitude={listing.latitude}
               longitude={listing.longitude}
             />
+          </ContentBox>
+
+          <ContentBox title={'O sprzedawcy:'}>
+            <UserInfo user={listing.userRef} />
           </ContentBox>
         </div>
       </CenteredContent>

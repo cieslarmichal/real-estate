@@ -5,7 +5,7 @@ import DataTable from '../dataTable/dataTable';
 
 function UserInfo({ user, loggedInUser, showUserEdit = false }) {
   const userDetails = [
-    { label: 'Nazwa użytkownika:', value: <NavLink to={`/profiles/${user.id}`}>{user.name}</NavLink> },
+    { label: 'Nazwa użytkownika:', value: <NavLink to={`/profiles/${user._id}`}>{user.username}</NavLink> },
     {
       label: 'Email:',
       value: user.email,
@@ -32,7 +32,7 @@ function UserInfo({ user, loggedInUser, showUserEdit = false }) {
     <div className={styles.userInfo}>
       <p>
         <img
-          src={`${backendUrl}/static${user.avatar}`}
+          src={`${backendUrl}/public${user.avatar}`}
           alt="Avatar"
           className={styles.userImage}
         />
@@ -45,7 +45,7 @@ function UserInfo({ user, loggedInUser, showUserEdit = false }) {
 
       {showUserEdit && loggedInUser && loggedInUser._id === user._id && (
         <NavLink
-          to={`/profiles/edit/${user.id}`}
+          to={`/profiles/edit/${user._id}`}
           className={styles.editLink}
         >
           Edytuj profil
