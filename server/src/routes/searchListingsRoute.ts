@@ -3,10 +3,7 @@
 import { type Static, Type } from '@sinclair/typebox';
 import { type FastifyRequest, type FastifyInstance } from 'fastify';
 
-import { cityModel } from '../models/cityModel.js';
 import { listingModel } from '../models/listingModel.js';
-
-console.log(cityModel);
 
 const queryParamsSchema = Type.Object({
   page: Type.Optional(Type.Number({ minimum: 1 })),
@@ -23,7 +20,7 @@ const queryParamsSchema = Type.Object({
 
 type QueryParams = Static<typeof queryParamsSchema>;
 
-export function getListingsRoute(fastify: FastifyInstance): void {
+export function getLatestListingsRoute(fastify: FastifyInstance): void {
   fastify.get(
     '/api/v1/listings',
     {
