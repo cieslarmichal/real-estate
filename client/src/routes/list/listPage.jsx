@@ -5,6 +5,7 @@ import styles from './listPage.module.css';
 import ListingItem from '../../components/listingItem/listingItem';
 import CenteredContent from '../../components/centeredContent/centeredContent';
 import Pagination from '../../components/pagination/pagination';
+import SearchBar from '../../components/searchBar/searchBar';
 
 function ListPage() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -50,6 +51,9 @@ function ListPage() {
 
   return (
     <>
+      <div className={styles.searchBarWrapper}>
+        <SearchBar setPage={setPage} />
+      </div>
       <CenteredContent>
         <h3>Ogłoszenia</h3>
         <div className={styles.listings}>
