@@ -6,6 +6,7 @@ import { listingPageLoader } from './api/listingPageLoader';
 import ListingPage from './routes/listing/listingPage';
 import User from './routes/user/user';
 import { userPageLoader } from './api/userPageLoader';
+import ListPage from './routes/list/listPage';
 
 function App() {
   const router = createBrowserRouter([
@@ -16,6 +17,10 @@ function App() {
         {
           path: '/',
           element: <Home />,
+        },
+        {
+          path: '/listings',
+          element: <ListPage />,
         },
         {
           path: '/listings/:id',
