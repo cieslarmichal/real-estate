@@ -4,9 +4,10 @@ import { backendUrl } from '../../constants/api';
 import styles from './listPage.module.css';
 import ListingItem from '../../components/listingItem/listingItem';
 import CenteredContent from '../../components/centeredContent/centeredContent';
+import Pagination from '../../components/pagination/pagination';
 
 function ListPage() {
-  const [searchParams, setSearchParams] = useSearchParams('');
+  const [searchParams, setSearchParams] = useSearchParams();
 
   const [values, setValues] = useState({
     listings: [],
@@ -29,20 +30,18 @@ function ListPage() {
 
   useEffect(() => {
     const fetchListings = async () => {
-      const response = await fetch(
-        `${backendUrl}/api/v1/listings?${searchParams.toString()}&limit=${values.limit}&page=${values.page}`,
-      );
+      const response = await fetch(`${backendUrl}/api/v1/listings?${searchParams.toString()}&limit=${values.limit}`);
 
       if (!response.ok) {
         throw new Error('Failed to fetch listings');
       }
 
-      const data = await response.json();
+      const jsonResponse = await response.json();
 
       setValues({
         ...values,
-        listings: data.listings,
-        total: data.total,
+        listings: jsonResponse.data,
+        total: jsonResponse.metadata.total,
       });
     };
 
@@ -61,6 +60,11 @@ function ListPage() {
             />
           ))}
         </div>
+        <Pagination
+          page={values.page}
+          totalPages={Math.ceil(values.total / values.limit)}
+          onPageChange={setPage}
+        />
       </CenteredContent>
     </>
   );
