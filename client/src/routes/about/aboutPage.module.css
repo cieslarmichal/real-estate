@@ -1,0 +1,38 @@
+.aboutHero {
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.aboutHero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.aboutHero p {
+  font-size: 32px;
+}
+
+.statsContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  text-align: center;
+  margin: 20px;
+}
+
+.stat h3 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.stat p {
+  font-size: 18px;
+  color: #555;
+}

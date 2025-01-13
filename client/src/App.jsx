@@ -7,6 +7,7 @@ import ListingPage from './routes/listing/listingPage';
 import User from './routes/user/user';
 import { userPageLoader } from './api/userPageLoader';
 import ListPage from './routes/list/listPage';
+import AboutPage from './routes/about/aboutPage';
 
 function App() {
   const router = createBrowserRouter([
@@ -31,6 +32,10 @@ function App() {
           path: '/profiles/:id',
           element: <User />,
           loader: userPageLoader,
+        },
+        {
+          path: '/about',
+          element: <AboutPage />,
         },
       ],
     },
