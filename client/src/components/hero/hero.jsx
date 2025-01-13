@@ -1,4 +1,5 @@
 import { backendUrl } from '../../constants/api';
+import SearchBar from '../searchBar/searchBar';
 import styles from './hero.module.css';
 
 function Hero() {
@@ -8,7 +9,9 @@ function Hero() {
     <div
       className={styles.hero}
       style={{ backgroundImage: `url(${heroImageUrl})` }}
-    ></div>
+    >
+      <SearchBar />
+    </div>
   );
 }
 
