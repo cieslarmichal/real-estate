@@ -3,6 +3,7 @@ import styles from './searchBar.module.css';
 import { Link, useSearchParams } from 'react-router-dom';
 import { propertyTypes, roomsOptions, transactionTypeOptions } from '../../constants/api';
 import CenteredContent from '../centeredContent/centeredContent';
+import CityInputAutocomplete from '../cityAutocompleteInput/cityAutocompleteInput';
 
 function SearchBar({ setPage }) {
   const [searchParams] = useSearchParams();
@@ -108,16 +109,12 @@ function SearchBar({ setPage }) {
 
         <div className={styles.searchBarField}>
           <label htmlFor="locality">Miasto:</label>
-          <div className={styles.searchBarRow}>
-            <input
-              type="text"
-              name="locality"
-              id="locality"
-              placeholder="Miasto"
-              value={query.locality}
-              onChange={handleChange}
-            />
-          </div>
+          <CityInputAutocomplete
+            voivodeship=""
+            city={query.locality}
+            onChange={(value) => setQuery((prev) => ({ ...prev, locality: value }))}
+            onSelect={(value) => setQuery((prev) => ({ ...prev, locality: value }))}
+          />
         </div>
 
         <div className={styles.searchBarField}>

@@ -3,10 +3,7 @@
 import { type Static, Type } from '@sinclair/typebox';
 import { type FastifyRequest, type FastifyInstance } from 'fastify';
 
-import { cityModel } from '../models/cityModel.js';
 import { listingModel } from '../models/listingModel.js';
-
-console.log(cityModel);
 
 const queryParamsSchema = Type.Object({
   page: Type.Optional(Type.Number({ minimum: 1 })),

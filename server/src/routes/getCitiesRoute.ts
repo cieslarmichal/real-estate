@@ -33,14 +33,14 @@ export function getCitiesRoute(fastify: FastifyInstance): void {
       if (request.query.name) {
         citiesQuery.name = {
           $regex: `^${request.query.name}`,
-          options: 'i',
+          $options: 'i',
         };
       }
 
       if (request.query.voivodeship) {
         citiesQuery.voivodeship = {
           $regex: `^${request.query.voivodeship}`,
-          options: 'i',
+          $options: 'i',
         };
       }
 
