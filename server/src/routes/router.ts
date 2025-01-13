@@ -1,5 +1,6 @@
 import { type FastifyRequest, type FastifyInstance } from 'fastify';
 
+import { getCitiesRoute } from './getCitiesRoute.js';
 import { getListingRoute } from './getListingRoute.js';
 import { getListingsRoute } from './getListingsRoute.js';
 import { getUserRoute } from './getUserRoute.js';
@@ -15,4 +16,6 @@ export function registerRoutes(fastify: FastifyInstance): void {
   fastify.register(getListingRoute);
 
   fastify.register(getUserRoute);
+
+  fastify.register(getCitiesRoute);
 }
