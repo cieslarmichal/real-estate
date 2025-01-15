@@ -16,6 +16,8 @@ const queryParamsSchema = Type.Object({
   minPrice: Type.Optional(Type.Number({ minimum: 1 })),
   maxPrice: Type.Optional(Type.Number({ minimum: 1 })),
   rooms: Type.Optional(Type.Number({ minimum: 1 })),
+  southWest: Type.Optional(Type.String({ minLength: 1 })),
+  northEast: Type.Optional(Type.String({ minLength: 1 })),
 });
 
 type QueryParams = Static<typeof queryParamsSchema>;
@@ -74,6 +76,22 @@ export function getListingsRoute(fastify: FastifyInstance): void {
 
       if (request.query.rooms) {
         listingsQuery.rooms = { $gte: request.query.rooms };
+      }
+
+      if (request.query.southWest && request.query.northEast) {
+        const [swLat, swLng] = request.query.southWest.split(',').map(parseFloat);
+
+        const [neLat, neLng] = request.query.northEast.split(',').map(parseFloat);
+
+        listingsQuery.latitude = {
+          $gte: swLat,
+          $lte: neLat,
+        };
+
+        listingsQuery.longitude = {
+          $gte: swLng,
+          $lte: neLng,
+        };
       }
 
       const [listings, total] = await Promise.all([

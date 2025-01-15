@@ -8,6 +8,8 @@ import User from './routes/user/user';
 import { userPageLoader } from './api/userPageLoader';
 import ListPage from './routes/list/listPage';
 import AboutPage from './routes/about/aboutPage';
+import LocationMap from './routes/locationMap/locationMap';
+import { cityLoader } from './api/cityLoader';
 
 function App() {
   const router = createBrowserRouter([
@@ -27,6 +29,11 @@ function App() {
           path: '/listings/:id',
           element: <ListingPage />,
           loader: listingPageLoader,
+        },
+        {
+          path: '/listings/locations/:name',
+          element: <LocationMap />,
+          loader: cityLoader,
         },
         {
           path: '/profiles/:id',
