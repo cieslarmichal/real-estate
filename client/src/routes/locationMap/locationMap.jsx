@@ -1,6 +1,6 @@
 import CenteredContent from '../../components/centeredContent/centeredContent';
 import ContentBox from '../../components/contentBox/contentBox';
-import styles from './locationMap.module.css';
+import FilteredMapListings from '../../components/filteredMapListings/filteredMapListings';
 import { useParams, useLoaderData } from 'react-router-dom';
 
 function LocationMap() {
@@ -19,7 +19,10 @@ function LocationMap() {
   return (
     <CenteredContent>
       <ContentBox title={`Lista nieruchomości dla lokalizacji: ${name.charAt(0).toUpperCase() + name.slice(1)}`}>
-        <></>
+        <FilteredMapListings
+          initialLat={initialLat}
+          initialLng={initialLng}
+        />
       </ContentBox>
     </CenteredContent>
   );

@@ -9,7 +9,7 @@ function CityCard({ cityName }) {
 
   return (
     <NavLink
-      to={`/listings/location/${cityNameLowerCase}`}
+      to={`/listings/locations/${cityNameLowerCase}`}
       className={styles.cityCard}
     >
       <div className={styles.imageContainer}>
