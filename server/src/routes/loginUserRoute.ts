@@ -3,7 +3,7 @@
 import { type Static, Type } from '@sinclair/typebox';
 import { compare } from 'bcrypt';
 import { type FastifyRequest, type FastifyInstance } from 'fastify';
-import { sign } from 'jsonwebtoken';
+import jwt from 'jsonwebtoken';
 
 import { ResourceNotFoundError } from '../common/errors/resourceNotFoundError.js';
 import { type Config } from '../config.js';
@@ -47,7 +47,7 @@ export function loginUserRoute(fastify: FastifyInstance, config: Config): void {
         });
       }
 
-      const token = sign(
+      const token = jwt.sign(
         {
           id: existingUser._id,
           role: existingUser.role,

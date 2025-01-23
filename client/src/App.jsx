@@ -10,6 +10,7 @@ import ListPage from './routes/list/listPage';
 import AboutPage from './routes/about/aboutPage';
 import LocationMap from './routes/locationMap/locationMap';
 import { cityLoader } from './api/cityLoader';
+import Register from './routes/register/register';
 
 function App() {
   const router = createBrowserRouter([
@@ -39,6 +40,16 @@ function App() {
           path: '/profiles/:id',
           element: <User />,
           loader: userPageLoader,
+        },
+        {
+          path: '/login',
+        },
+        {
+          path: '/register',
+          element: <Register />,
+        },
+        {
+          path: '/logout',
         },
         {
           path: '/about',

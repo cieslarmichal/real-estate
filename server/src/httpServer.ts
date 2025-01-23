@@ -88,7 +88,7 @@ export class HttpServer {
 
     this.addRequestPreprocessing();
 
-    registerRoutes(this.fastifyServer);
+    registerRoutes(this.fastifyServer, this.config);
 
     await this.fastifyServer.listen({
       port,
