@@ -1,12 +1,14 @@
 import styles from '../../styles/form.module.css';
-import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { registerUser } from '../../auth/auth';
+import { useContext, useState } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { loginUser } from '../../auth/auth';
 import CenteredContent from '../../components/centeredContent/centeredContent';
+import { AuthContext } from '../../context/authContext';
 
-function Register() {
+function Login() {
+  const { updateUserData } = useContext(AuthContext);
+
   const [values, setValues] = useState({
-    username: '',
     email: '',
     password: '',
   });
@@ -18,6 +20,7 @@ function Register() {
   const [success, setSuccess] = useState(false);
 
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleChange = (e) => {
     setValues((prev) => ({
@@ -38,19 +41,20 @@ function Register() {
     setSuccess(false);
 
     try {
-      await registerUser(values);
+      const response = await loginUser(values);
+
+      console.log(response);
 
       setSuccess(true);
 
       setValues({
-        username: '',
         email: '',
         password: '',
       });
 
-      setTimeout(() => {
-        navigate('/login');
-      }, 1000);
+      const redirectPath = location.state?.from || '/';
+
+      navigate(redirectPath);
     } catch (error) {
       setError(error.message);
     } finally {
@@ -62,23 +66,11 @@ function Register() {
     <CenteredContent>
       <div className={styles.formWrapper}>
         <div className={styles.formContainer}>
-          <h2 className={styles.formTitle}>Register</h2>
+          <h2 className={styles.formTitle}>Logowanie</h2>
           <form
             onSubmit={handleSubmit}
             noValidate
           >
-            <div className={styles.formGroup}>
-              <label htmlFor="username">Nazwa użytkownika</label>
-              <input
-                type="text"
-                id="username"
-                name="username"
-                placeholder="Nazwa użytkownika"
-                value={values.username}
-                onChange={handleChange}
-              />
-            </div>
-
             <div className={styles.formGroup}>
               <label htmlFor="email">Email</label>
               <input
@@ -110,19 +102,19 @@ function Register() {
               className={styles.buttonSubmit}
               disabled={isLoading}
             >
-              {isLoading ? 'Ładowanie...' : 'Zarejestruj'}
+              {isLoading ? 'Logowanie...' : 'Zaloguj się'}
             </button>
 
             <div className={styles.additionalAction}>
-              <Link to="/login">Masz już konto? Zaloguj się</Link>
+              <Link to="/register">Nie masz konta? Zarejestruj się</Link>
             </div>
           </form>
 
-          {success && <div className={styles.successMessage}>Rejestracja zakończona sukcesem</div>}
+          {success && <div className={styles.successMessage}>Logowanie zakończona sukcesem</div>}
         </div>
       </div>
     </CenteredContent>
   );
 }
 
-export default Register;
+export default Login;

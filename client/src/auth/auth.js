@@ -10,8 +10,16 @@ export const registerUser = async (userData) => {
     body: JSON.stringify(userData),
   });
 
+  if (response.status === 409) {
+    throw new Error('User already exists');
+  }
+
+  if (response.status === 400) {
+    throw new Error('Invalid data');
+  }
+
   if (!response.ok) {
-    throw new Error('Error while registering user: ' + userData);
+    throw new Error('Unknown error');
   }
 
   const data = await response.json();
@@ -22,7 +30,33 @@ export const registerUser = async (userData) => {
 export const loginUser = async (userData) => {
   const response = await fetch(`${backendUrl}/api/v1/users/login`, {
     method: 'POST',
-    credentials: 'include',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(userData),
+  });
+
+  if (response.status === 404) {
+    throw new Error('Invalid credentials');
+  }
+
+  if (response.status === 400) {
+    throw new Error('Invalid data');
+  }
+
+  if (!response.ok) {
+    throw new Error('Unknown error');
+  }
+
+  const data = await response.json();
+
+  return data;
+};
+
+export const logoutUser = async (userData) => {
+  const response = await fetch(`${backendUrl}/api/v1/users/logout`, {
+    method: 'POST',
     headers: {
       Accept: 'application/json',
       'Content-Type': 'application/json',
@@ -31,10 +65,6 @@ export const loginUser = async (userData) => {
   });
 
   if (!response.ok) {
-    throw new Error('Error while logging in user: ' + userData);
+    throw new Error('Unknown error');
   }
-
-  const data = await response.json();
-
-  return data;
 };

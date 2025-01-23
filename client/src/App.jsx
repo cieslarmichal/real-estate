@@ -11,6 +11,8 @@ import AboutPage from './routes/about/aboutPage';
 import LocationMap from './routes/locationMap/locationMap';
 import { cityLoader } from './api/cityLoader';
 import Register from './routes/register/register';
+import Login from './routes/login/login';
+import Logout from './routes/logout/logout';
 
 function App() {
   const router = createBrowserRouter([
@@ -43,6 +45,7 @@ function App() {
         },
         {
           path: '/login',
+          element: <Login />,
         },
         {
           path: '/register',
@@ -50,6 +53,7 @@ function App() {
         },
         {
           path: '/logout',
+          element: <Logout />,
         },
         {
           path: '/about',
