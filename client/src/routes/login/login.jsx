@@ -41,9 +41,11 @@ function Login() {
     setSuccess(false);
 
     try {
-      const response = await loginUser(values);
+      const userData = await loginUser(values);
 
-      console.log(response);
+      console.log(userData);
+
+      updateUserData(userData);
 
       setSuccess(true);
 
