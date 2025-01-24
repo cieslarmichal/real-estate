@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { fastifyCookie } from '@fastify/cookie';
 import { fastifyCors } from '@fastify/cors';
 import { fastifyHelmet } from '@fastify/helmet';
 import { fastifyMultipart } from '@fastify/multipart';
@@ -11,6 +10,7 @@ import { fastify, type FastifyInstance } from 'fastify';
 import { type FastifySchemaValidationError } from 'fastify/types/schema.js';
 import path from 'node:path';
 
+import { AuthService } from './common/auth/authService.js';
 import { ForbiddenAccessError } from './common/errors/forbiddenAccessError.js';
 import { InputNotValidError } from './common/errors/inputNotValidError.js';
 import { OperationNotValidError } from './common/errors/operationNotValidError.js';
@@ -52,8 +52,6 @@ export class HttpServer {
       allowedHeaders: '*',
     });
 
-    await this.fastifyServer.register(fastifyCookie);
-
     await this.fastifyServer.register(fastifyStatic, {
       root: path.join(path.resolve(), 'public'),
       prefix: '/public',
@@ -88,7 +86,9 @@ export class HttpServer {
 
     this.addRequestPreprocessing();
 
-    registerRoutes(this.fastifyServer, this.config);
+    const authService = new AuthService(this.config);
+
+    registerRoutes(this.fastifyServer, this.config, authService);
 
     await this.fastifyServer.listen({
       port,

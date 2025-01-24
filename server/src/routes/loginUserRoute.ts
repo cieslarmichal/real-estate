@@ -5,6 +5,7 @@ import { compare } from 'bcrypt';
 import { type FastifyRequest, type FastifyInstance } from 'fastify';
 import jwt from 'jsonwebtoken';
 
+import { type TokenPayload } from '../common/auth/authService.js';
 import { ResourceNotFoundError } from '../common/errors/resourceNotFoundError.js';
 import { type Config } from '../config.js';
 import { userModel } from '../models/userModel.js';
@@ -47,16 +48,14 @@ export function loginUserRoute(fastify: FastifyInstance, config: Config): void {
         });
       }
 
-      const token = jwt.sign(
-        {
-          id: existingUser._id,
-          role: existingUser.role,
-        },
-        config.token.secret,
-        {
-          expiresIn: '7d',
-        },
-      );
+      const tokenPayload = {
+        userId: String(existingUser._id),
+        role: existingUser.role,
+      } satisfies TokenPayload;
+
+      const token = jwt.sign(tokenPayload, config.token.secret, {
+        expiresIn: '7d',
+      });
 
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const { password: _, ...userWithoutPassword } = existingUser.toObject();

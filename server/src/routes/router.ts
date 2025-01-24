@@ -8,9 +8,11 @@ import { getUserRoute } from './getUserRoute.js';
 import { loginUserRoute } from './loginUserRoute.js';
 import { logoutUserRoute } from './logoutUserRoute.js';
 import { registerUserRoute } from './registerUserRoute.js';
+import { type AuthService } from '../common/auth/authService.js';
 import { type Config } from '../config.js';
+import { createListingRoute } from './createListingRoute.js';
 
-export function registerRoutes(fastify: FastifyInstance, config: Config): void {
+export function registerRoutes(fastify: FastifyInstance, config: Config, authService: AuthService): void {
   // eslint-disable-next-line @typescript-eslint/naming-convention
   fastify.get('/health', async (_request: FastifyRequest, reply) => {
     return reply.send({ healthy: true });
@@ -31,4 +33,6 @@ export function registerRoutes(fastify: FastifyInstance, config: Config): void {
   registerUserRoute(fastify, config);
 
   fastify.register(logoutUserRoute);
+
+  createListingRoute(fastify, authService);
 }
