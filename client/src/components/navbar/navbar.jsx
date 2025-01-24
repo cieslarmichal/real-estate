@@ -20,11 +20,16 @@ function Navbar() {
         </NavLink>
         <ul className={styles.navbarList}>
           {userData ? (
-            <li>
-              <NavLink to={`/profiles/${userData._id}`}>
-                <FaUser /> Moje konto
-              </NavLink>
-            </li>
+            <>
+              <li>
+                <NavLink to={`/profiles/${userData._id}`}>
+                  <FaUser /> Moje konto
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/logout">Wyloguj</NavLink>
+              </li>
+            </>
           ) : (
             <>
               <li>
