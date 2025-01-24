@@ -40,23 +40,20 @@ export const getListingById = async (listingId) => {
   }
 };
 
-export const createListing = async (listingData) => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const { userData } = useContext(AuthContext);
-
-  if (!userData) {
-    return null;
-  }
-
+export const createListing = async (listingData, token) => {
   try {
     const response = await fetch(`${backendUrl}/api/v1/listings`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        authorization: `Bearer ${userData.token}`,
+        authorization: `Bearer ${token}`,
       },
       body: JSON.stringify(listingData),
     });
+
+    if (response.status === 400) {
+      throw new Error('Invalid data');
+    }
 
     if (!response.ok) {
       throw new Error('Error while creating a listing');

@@ -14,6 +14,7 @@ import Register from './routes/register/register';
 import Login from './routes/login/login';
 import Logout from './routes/logout/logout';
 import PrivateRoute from './auth/privateRoute';
+import AddListingPage from './routes/addListing/addListing';
 
 function App() {
   const router = createBrowserRouter([
@@ -33,6 +34,14 @@ function App() {
           path: '/listings/:id',
           element: <ListingPage />,
           loader: listingPageLoader,
+        },
+        {
+          path: '/listings/add',
+          element: (
+            <PrivateRoute>
+              <AddListingPage />
+            </PrivateRoute>
+          ),
         },
         {
           path: '/listings/locations/:name',
