@@ -43,8 +43,6 @@ function Login() {
     try {
       const userData = await loginUser(values);
 
-      console.log(userData);
-
       updateUserData(userData);
 
       setSuccess(true);

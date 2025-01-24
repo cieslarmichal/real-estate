@@ -13,6 +13,7 @@ import { cityLoader } from './api/cityLoader';
 import Register from './routes/register/register';
 import Login from './routes/login/login';
 import Logout from './routes/logout/logout';
+import PrivateRoute from './auth/privateRoute';
 
 function App() {
   const router = createBrowserRouter([
@@ -53,7 +54,11 @@ function App() {
         },
         {
           path: '/logout',
-          element: <Logout />,
+          element: (
+            <PrivateRoute>
+              <Logout />
+            </PrivateRoute>
+          ),
         },
         {
           path: '/about',

@@ -8,7 +8,6 @@ import Faq from '../../components/faq/faq';
 function Home() {
   return (
     <div>
-      Home
       <Hero />
       <CenteredContent>
         <ContentBox title="Najnowsze nieruchomości na sprzedaż">

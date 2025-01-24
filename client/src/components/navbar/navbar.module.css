@@ -1,0 +1,35 @@
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  align-items: center;
+  background-color: white;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.logo {
+  margin-left: 10px;
+  width: 5rem;
+}
+
+.navbarList {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbarList li {
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.navbarList li a {
+  color: black;
+}
+
+.navbarList li a:hover {
+  opacity: 0.8;
+}
