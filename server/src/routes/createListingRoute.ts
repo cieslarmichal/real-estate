@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 
 import { type Static, Type } from '@sinclair/typebox';
+import { Decode } from '@sinclair/typebox/value';
 import { type FastifyRequest, type FastifyInstance } from 'fastify';
 import { createWriteStream } from 'node:fs';
 import { pipeline } from 'node:stream';
@@ -11,6 +12,7 @@ import { fileURLToPath } from 'url';
 const streamPipeline = promisify(pipeline);
 
 import { type AuthService } from '../common/auth/authService.js';
+import { OperationNotValidError } from '../common/errors/operationNotValidError.js';
 import { ResourceNotFoundError } from '../common/errors/resourceNotFoundError.js';
 import { listingModel } from '../models/listingModel.js';
 import { userModel } from '../models/userModel.js';
@@ -18,6 +20,12 @@ import { userModel } from '../models/userModel.js';
 const __filename = fileURLToPath(import.meta.url);
 
 const __dirname = path.dirname(__filename);
+
+const headersSchema = Type.Object({
+  authorization: Type.String({ minLength: 1 }),
+});
+
+type Headers = Static<typeof headersSchema>;
 
 const bodySchema = Type.Object({
   title: Type.String({
@@ -53,23 +61,13 @@ const bodySchema = Type.Object({
     Type.Literal('garaż'),
     Type.Literal('hale i magazyny'),
   ]),
-  imageUrls: Type.Array(Type.String()),
 });
-
-type Body = Static<typeof bodySchema>;
-
-const headersSchema = Type.Object({
-  authorization: Type.String({ minLength: 1 }),
-});
-
-type Headers = Static<typeof headersSchema>;
 
 export function createListingRoute(fastify: FastifyInstance, authService: AuthService): void {
   fastify.post(
     '/api/v1/listings',
     {
       schema: {
-        body: bodySchema,
         headers: headersSchema,
       },
     },
@@ -91,36 +89,42 @@ export function createListingRoute(fastify: FastifyInstance, authService: AuthSe
         });
       }
 
+      if (!request.isMultipart()) {
+        throw new OperationNotValidError({
+          reason: 'Request is not multipart',
+        });
+      }
+
       const imageUrls: string[] = [];
 
-      if (request.isMultipart()) {
-        const imageExtensions = ['jpg', 'jpeg', 'png'];
+      const fields: Record<string, unknown> = {};
 
-        const files = request.files();
+      const parts = request.parts();
 
-        for await (const file of files) {
-          const { filename, file: data } = file;
+      for await (const part of parts) {
+        if (part.type === 'file') {
+          const fileExtension = part.filename.split('.')?.pop();
 
-          const fileExtension = filename.split('.')?.pop();
-
-          if (!fileExtension || !imageExtensions.includes(fileExtension)) {
+          if (!fileExtension || !['jpg', 'jpeg', 'png'].includes(fileExtension)) {
             continue;
           }
 
-          const imagePath = `/img/files/${new Date().getTime()}-${filename}`;
+          const imagePath = `/img/files/${new Date().getTime()}-${part.filename}`;
 
           imageUrls.push(imagePath);
 
           const filePath = path.join(__dirname, '..', '..', 'public', imagePath);
 
-          const writer = createWriteStream(filePath);
-
-          await streamPipeline(data, writer);
+          await streamPipeline(part.file, createWriteStream(filePath));
+        } else {
+          fields[part.fieldname] = part.value;
         }
       }
 
+      const listingBody = Decode(bodySchema, fields);
+
       const listing = await listingModel.create({
-        ...request.body,
+        ...listingBody,
         imageUrls,
         userRef: existingUser,
         userId: existingUser._id,
