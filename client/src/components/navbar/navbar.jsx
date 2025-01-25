@@ -5,6 +5,7 @@ import { AuthContext } from '../../context/authContext';
 import CenteredContent from '../centeredContent/centeredContent';
 import { NavLink } from 'react-router-dom';
 import { backendUrl } from '../../constants/api';
+import AddListingButton from './addListingButton/addListingButton';
 
 function Navbar() {
   const { userData } = useContext(AuthContext);
@@ -40,6 +41,9 @@ function Navbar() {
               </li>
             </>
           )}
+          <li>
+            <AddListingButton />
+          </li>
         </ul>
       </nav>
     </CenteredContent>
