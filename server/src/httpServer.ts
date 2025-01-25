@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-/* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { fastifyCors } from '@fastify/cors';
 import { fastifyHelmet } from '@fastify/helmet';
@@ -84,8 +83,6 @@ export class HttpServer {
       return (data): string => JSON.stringify(data);
     });
 
-    this.addRequestPreprocessing();
-
     const authService = new AuthService(this.config);
 
     registerRoutes(this.fastifyServer, this.config, authService);
@@ -168,25 +165,5 @@ export class HttpServer {
         message: 'Internal server error',
       });
     });
-  }
-
-  private addRequestPreprocessing(): void {
-    this.fastifyServer.addHook('preValidation', (request, _reply, next) => {
-      const body = request.body as Record<string, unknown>;
-
-      this.trimStringProperties(body);
-
-      next();
-    });
-  }
-
-  private trimStringProperties(obj: Record<string, any>): void {
-    for (const key in obj) {
-      if (typeof obj[key] === 'string') {
-        obj[key] = obj[key].trim();
-      } else if (typeof obj[key] === 'object' && obj[key] !== null) {
-        this.trimStringProperties(obj[key]);
-      }
-    }
   }
 }

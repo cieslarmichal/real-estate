@@ -73,16 +73,30 @@ function AddListingPage() {
     setError(null);
     setSuccess(false);
 
-    try {
-      console.log({ values });
-      const data = await createListing(values, userData.token);
-      console.log({ data });
+    const formData = new FormData();
 
-      setSuccess(true);
-      navigate(`/listings/${data._id}`);
+    Object.keys(values).forEach((key) => {
+      formData.set(key, values[key]);
+    });
+
+    Array.from(images).forEach((image) => {
+      formData.append('images', image);
+    });
+
+    try {
+      const data = await createListing(formData, userData.token);
+
+      if (!data) {
+        setError('Nie udało się dodać nieruchomości');
+      } else {
+        console.log({ data });
+
+        setSuccess(true);
+
+        navigate(`/listings/${data._id}`);
+      }
     } catch (error) {
       setError(error.message);
-      console.log(error);
     } finally {
       setIsLoading(false);
     }
@@ -217,7 +231,7 @@ function AddListingPage() {
               <div>
                 <CityInputAutocomplete
                   voivodeship={values.voivodeship}
-                  value={values.locality}
+                  city={values.locality}
                   onChange={(val) =>
                     setValues((prevValues) => ({
                       ...prevValues,

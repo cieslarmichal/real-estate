@@ -12,7 +12,6 @@ import { fileURLToPath } from 'url';
 const streamPipeline = promisify(pipeline);
 
 import { type AuthService } from '../common/auth/authService.js';
-import { OperationNotValidError } from '../common/errors/operationNotValidError.js';
 import { ResourceNotFoundError } from '../common/errors/resourceNotFoundError.js';
 import { listingModel } from '../models/listingModel.js';
 import { userModel } from '../models/userModel.js';
@@ -89,12 +88,6 @@ export function createListingRoute(fastify: FastifyInstance, authService: AuthSe
         });
       }
 
-      if (!request.isMultipart()) {
-        throw new OperationNotValidError({
-          reason: 'Request is not multipart',
-        });
-      }
-
       const imageUrls: string[] = [];
 
       const fields: Record<string, unknown> = {};
@@ -121,7 +114,24 @@ export function createListingRoute(fastify: FastifyInstance, authService: AuthSe
         }
       }
 
-      const listingBody = Decode(bodySchema, fields);
+      const parsedFields = {
+        title: fields['title'],
+        description: fields['description'],
+        price: parseInt(fields['price'] as string, 10),
+        rooms: parseInt(fields['rooms'] as string, 10),
+        bathrooms: parseInt(fields['bathrooms'] as string, 10),
+        floor: parseInt(fields['floor'] as string, 10),
+        size: parseInt(fields['size'] as string, 10),
+        locality: fields['locality'],
+        address: fields['address'],
+        latitude: fields['latitude'],
+        longitude: fields['longitude'],
+        voivodeship: fields['voivodeship'],
+        type: fields['type'],
+        propertyType: fields['propertyType'],
+      };
+
+      const listingBody = Decode(bodySchema, parsedFields);
 
       const listing = await listingModel.create({
         ...listingBody,

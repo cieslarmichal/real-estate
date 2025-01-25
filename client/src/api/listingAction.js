@@ -45,10 +45,10 @@ export const createListing = async (listingData, token) => {
     const response = await fetch(`${backendUrl}/api/v1/listings`, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        accept: 'application/json',
         authorization: `Bearer ${token}`,
       },
-      body: JSON.stringify(listingData),
+      body: listingData,
     });
 
     if (response.status === 400) {
