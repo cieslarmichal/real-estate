@@ -21,6 +21,7 @@ import AdminUsersList from './admin/routes/adminUsersList/adminUsersList';
 import AdminCitiesList from './admin/routes/adminCitiesList/adminCitiesList';
 import AdminCityPage from './admin/routes/adminCityPage/adminCityPage';
 import AdminAddCity from './admin/routes/adminAddCity/adminAddCity';
+import AdminUpdateCity from './admin/routes/adminUpdateCity/adminUpdateCity';
 
 function App() {
   const router = createBrowserRouter([
@@ -114,6 +115,14 @@ function App() {
           element: (
             <AdminRoute>
               <AdminCityPage />
+            </AdminRoute>
+          ),
+        },
+        {
+          path: '/admin/cities/:id/edit',
+          element: (
+            <AdminRoute>
+              <AdminUpdateCity />
             </AdminRoute>
           ),
         },

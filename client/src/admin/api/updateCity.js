@@ -1,9 +1,9 @@
 import { backendUrl } from '../../constants/api';
 
-export const createCity = async (cityData, token) => {
+export const updateCity = async (id, cityData, token) => {
   try {
-    const response = await fetch(`${backendUrl}/api/v1/cities`, {
-      method: 'POST',
+    const response = await fetch(`${backendUrl}/api/v1/cities/${id}`, {
+      method: 'PATCH',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
@@ -18,12 +18,12 @@ export const createCity = async (cityData, token) => {
       throw new Error('Invalid data');
     }
 
-    if (response.status === 409) {
-      throw new Error('City already exists');
+    if (response.status === 404) {
+      throw new Error('City does not exist');
     }
 
     if (!response.ok) {
-      throw new Error('Error while creating a city');
+      throw new Error('Error while updating a city');
     }
 
     const jsonResponse = await response.json();

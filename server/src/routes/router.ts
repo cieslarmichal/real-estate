@@ -13,6 +13,7 @@ import { type AuthService } from '../common/auth/authService.js';
 import { type Config } from '../config.js';
 import { createListingRoute } from './createListingRoute.js';
 import { getUsersRoute } from './getUsersRoute.js';
+import { updateCityRoute } from './updateCityRoute.js';
 
 export function registerRoutes(fastify: FastifyInstance, config: Config, authService: AuthService): void {
   // eslint-disable-next-line @typescript-eslint/naming-convention
@@ -39,6 +40,8 @@ export function registerRoutes(fastify: FastifyInstance, config: Config, authSer
   createListingRoute(fastify, authService);
 
   createCityRoute(fastify, authService);
+
+  updateCityRoute(fastify, authService);
 
   fastify.register(getUsersRoute);
 }
