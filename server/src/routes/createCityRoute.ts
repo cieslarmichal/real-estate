@@ -4,6 +4,7 @@ import { type Static, Type } from '@sinclair/typebox';
 import { type FastifyRequest, type FastifyInstance } from 'fastify';
 
 import { type AuthService } from '../common/auth/authService.js';
+import { ResourceAlreadyExistsError } from '../common/errors/resourceAlreadyExistsError.js';
 import { cityModel } from '../models/cityModel.js';
 
 const headersSchema = Type.Object({
@@ -33,7 +34,10 @@ const bodySchema = Type.Object({
       maxLength: 128,
     }),
   ),
-  type: Type.Union([Type.Literal('miasto'), Type.Literal('miasteczko'), Type.Literal('wieś'), Type.Literal('kurort')]),
+  type: Type.String({
+    minLength: 1,
+    maxLength: 128,
+  }),
   description: Type.Optional(Type.String({ maxLength: 2048 })),
   latitude: Type.Number({
     minimum: -90,
@@ -64,6 +68,19 @@ export function createCityRoute(fastify: FastifyInstance, authService: AuthServi
       reply,
     ) => {
       await authService.verifyToken(request.headers.authorization, 'admin');
+
+      const existingCity = await cityModel.findOne({
+        name: request.body.name,
+        voivodeship: request.body.voivodeship,
+      });
+
+      if (existingCity) {
+        throw new ResourceAlreadyExistsError({
+          resource: 'City',
+          name: request.body.name,
+          voivodeship: request.body.voivodeship,
+        });
+      }
 
       const city = await cityModel.create(request.body);
 

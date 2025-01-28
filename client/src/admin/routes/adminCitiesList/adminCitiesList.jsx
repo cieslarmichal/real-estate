@@ -1,4 +1,4 @@
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { NavLink, useNavigate, useSearchParams } from 'react-router-dom';
 import styles from '../../../styles/form.module.css';
 import { useContext, useEffect, useState } from 'react';
 import { backendUrl, voivodeships } from '../../../constants/api';
@@ -158,6 +158,12 @@ function AdminCitiesList() {
           totalPages={pagination.totalPages}
           onPageChange={handlePageChange}
         />
+
+        <div className="cityActions">
+          <p>
+            <NavLink to={'/admin/cities/add'}>Dodaj nowe miasto</NavLink>
+          </p>
+        </div>
       </ContentBox>
     </CenteredContent>
   );
