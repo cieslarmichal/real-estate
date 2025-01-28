@@ -15,6 +15,9 @@ import Login from './routes/login/login';
 import Logout from './routes/logout/logout';
 import PrivateRoute from './auth/privateRoute';
 import AddListingPage from './routes/addListing/addListing';
+import AdminLayout from './admin/components/adminLayout/adminLayout';
+import AdminRoute from './auth/adminRoute';
+import AdminUsersList from './admin/routes/adminUsersList/adminUsersList';
 
 function App() {
   const router = createBrowserRouter([
@@ -72,6 +75,20 @@ function App() {
         {
           path: '/about',
           element: <AboutPage />,
+        },
+      ],
+    },
+    {
+      path: '/',
+      element: <AdminLayout />,
+      children: [
+        {
+          path: '/admin/users',
+          element: (
+            <AdminRoute>
+              <AdminUsersList />
+            </AdminRoute>
+          ),
         },
       ],
     },
