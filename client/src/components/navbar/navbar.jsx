@@ -6,12 +6,15 @@ import CenteredContent from '../centeredContent/centeredContent';
 import { NavLink } from 'react-router-dom';
 import { backendUrl } from '../../constants/api';
 import AddListingButton from './addListingButton/addListingButton';
+import { isAdmin } from '../../auth/auth';
+import AdminNavbar from '../../admin/components/adminNavbar/adminNavbar';
 
 function Navbar() {
   const { userData } = useContext(AuthContext);
 
   return (
     <CenteredContent>
+      {userData && isAdmin(userData) && <AdminNavbar />}
       <nav className={styles.navbar}>
         <NavLink to="/">
           <img

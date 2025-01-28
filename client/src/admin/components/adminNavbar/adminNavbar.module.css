@@ -1,0 +1,22 @@
+.adminNavbar {
+  padding: 0.5rem;
+  background-color: #000;
+}
+
+.navbarList {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbarList #adminLogo {
+  color: #fff;
+}
+
+.navbarList li a,
+.navbarList li a:active,
+.navbarList li a:hover,
+.navbarList li a:visited,
+.navbarList li a:link {
+  color: #ececec;
+  text-decoration: none;
+}

@@ -68,3 +68,7 @@ export const logoutUser = async (userData) => {
     throw new Error('Unknown error');
   }
 };
+
+export const isAdmin = (userData) => {
+  return userData.role === 'admin';
+};
