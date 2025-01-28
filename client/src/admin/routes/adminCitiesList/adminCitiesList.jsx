@@ -99,7 +99,7 @@ function AdminCitiesList() {
   ];
 
   const data = cities.map((city) => ({
-    name: { text: city.name, link: `/cities/${city.name}` },
+    name: { text: city.name, link: `/admin/cities/${city._id}` },
     voivodeship: city.voivodeship,
     type: city.type,
     district: city.district,

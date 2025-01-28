@@ -19,6 +19,7 @@ import AdminLayout from './admin/components/adminLayout/adminLayout';
 import AdminRoute from './auth/adminRoute';
 import AdminUsersList from './admin/routes/adminUsersList/adminUsersList';
 import AdminCitiesList from './admin/routes/adminCitiesList/adminCitiesList';
+import AdminCityPage from './admin/routes/adminCityPage/adminCityPage';
 
 function App() {
   const router = createBrowserRouter([
@@ -96,6 +97,14 @@ function App() {
           element: (
             <AdminRoute>
               <AdminCitiesList />
+            </AdminRoute>
+          ),
+        },
+        {
+          path: '/admin/cities/:id',
+          element: (
+            <AdminRoute>
+              <AdminCityPage />
             </AdminRoute>
           ),
         },
